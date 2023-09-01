@@ -1,5 +1,7 @@
 package net.kayega.manager;
 
+import org.bukkit.World;
+
 public interface GameSettings {
     int getSeekerCount();
     void setSeekerCount(int seekerCount);
@@ -12,4 +14,7 @@ public interface GameSettings {
 
     int getSeekerReleaseTime();
     void setSeekerReleaseTime(int seekerReleaseTime);
+
+    World getWorld();
+    void setWorld(World world);
 }
